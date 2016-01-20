@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Boolean Operators</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+// not done
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type='text/javascript' src='scripts/physicsProjectileApp1.js'>
+  </script>
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.pushStateEnabled = false;
+    });
+</script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="navbar">
+    
+    <div data-role="content">
+      <label for="angle">Angle:</label>
+      <input type='number' name='angle' id='angle' min='0'
+      max='90' placeholder='In degrees'>
+      <label for="velocity">Velocity:</label>
+      <input type='number' name='velocity' id='velocity'
+      min='0' max='299792458' placeholder='In metres/second'>
+      <br>
+      <button onclick="display();">
+        Display
+      </button>
+      <br>
+      <table id="data">
+        <tr>
+          <td>Angle Entered:</td>
+          <td id='angleDisplay'>0</td>
+          <td>degrees</td>
+        </tr>
+        <tr>
+          <td>Velocity Entered:</td>
+          <td id='velocityDisplay'>0</td>
+          <td>metres/second</td>
+        </tr>
+      </table>
+    </div>
+    <div data-role=footer>
+      <small>
+
+        Cross-platform mobile app demo
+
+      </small>
+    </div>
+  </div>
+</body>
+
+</html>
