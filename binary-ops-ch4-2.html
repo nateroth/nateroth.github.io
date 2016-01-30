@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project 2, Question 3</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type='text/javascript' src='scripts/binary-ops-ch4-2.js'></script>
+  <script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.pushStateEnabled = false;
+    });
+  </script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="navbar">
+    <ul>
+      <li><a href="information.html" target>
+        Information</a>
+      </li>
+      <li><a href="binary-ops-ch4-2.html" class="ui-btn-active ui-state-persist">
+        Interface</a>
+      </li>
+    </ul>
+  </div>
+    <div data-role="content">
+      <label for="inputX">X:</label>
+      <input type='number' name='X' id='inputX' min='0'
+      max='1'>
+      <label for="unputY">Y:</label>
+      <input type='number' name='Y' id='inputY'
+      min='0' max='1'>
+      <h1>Truth Tables</h1>
+      <p>Click a button to see the corresponding truth table.</p>
+      <br>
+      <button id="btn1"> X && Y</button>
+      <button id="btn2"> X || Y</button>
+      <button id="btn3"> !X</button>
+      <button id="btn4"> X &oplus; Y</button>
+      <br>
+      <table id="data">
+      </table>
+      </div>
+  </div>
+</body>
+
+</html>
